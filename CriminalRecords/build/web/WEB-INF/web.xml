@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>searchResult</servlet-name>
+        <servlet-class>searchResult</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>searchResult</servlet-name>
+        <url-pattern>/searchResult</url-pattern>
+    </servlet-mapping>
+    
+      <servlet>
+    <servlet-name>LogOut</servlet-name>
+    <servlet-class>LoggintOut</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LogOut</servlet-name>
+    <url-pattern>/loginPage</url-pattern>
+  </servlet-mapping>
+    
+          <servlet>
+    <servlet-name>viewdetails</servlet-name>
+    <servlet-class>ViewingDetails</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>viewdetails</servlet-name>
+    <url-pattern>/viewingDetails</url-pattern>
+  </servlet-mapping>
+    
+    
+    
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
